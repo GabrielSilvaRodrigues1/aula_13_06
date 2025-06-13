@@ -1,17 +1,23 @@
 <?php
 namespace src\Services;
+
 use src\Models\Repository\AlunoRepository;
 use src\Models\Entity\Aluno;
 
-class AlunoService{
-    private $alunoRepository;
+class AlunoService
+{
+    private $aluno;
 
-    public function __construct(){
-        $this->alunoRepository = new AlunoRepository();
+    public function __construct()
+    {
+        $this->aluno = new AlunoRepository();
     }
-    public function criar(string $nome, string $genero){
+
+    public function criar($nome, $genero)
+    {
         $aluno = new Aluno($nome, $genero);
-        $this->alunoRepository->save($aluno);
+        $this->aluno->save($aluno);
+
+        return ['success'=>'Aluno Criado com'];
     }
 }
-?>

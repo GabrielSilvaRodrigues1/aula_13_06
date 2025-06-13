@@ -1,5 +1,5 @@
 {
-    "name": "aula_13_06/mvc",
+    "name": "aluno/aula10",
     "autoload": {
         "psr-4": {
             "src\\": "src/"
@@ -7,8 +7,8 @@
     },
     "authors": [
         {
-            "name": "GabrielSilvaRodrigues1",
-            "email": "gabrielsilvagithub@gmail.com"
+            "name": "Francisco Douglas",
+            "email": "98854868+franciscodouglas@users.noreply.github.com"
         }
     ],
     "require": {}
