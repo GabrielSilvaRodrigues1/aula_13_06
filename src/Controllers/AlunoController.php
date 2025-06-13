@@ -20,6 +20,9 @@ class AlunoController{
     public function mostrarFormulario(){
         include_once __DIR__ . '/../../views/aluno/form.php';
     }
+    public function hello(){
+        echo "Hello, PHP!";
+    }
         
 }
 

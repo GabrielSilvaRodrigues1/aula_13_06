@@ -33,7 +33,7 @@ services:
       - ./src:/var/www/html/src
       - ./docker/php.ini:/usr/local/etc/php/php.ini
     ports:
-      - "8010:80"
+      - "8000:80"
     depends_on:
       - db
 
